@@ -49,7 +49,7 @@ a {
 body {
     font-family: 'Mont';
     height: 100vh;
-    transition: 0.5s;
+    transition: all 0.5s;
 }
 
 /* txt */
