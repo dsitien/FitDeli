@@ -171,9 +171,12 @@ header .logo img {
 }
 
 .banner div:last-child {
-    height: 80vh;
-    width: 40vw;
+    height: 50vh;
+    width: 30vw;
     overflow: hidden;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    border-radius: 8px;
 }
 
 .banner div:last-child img {
