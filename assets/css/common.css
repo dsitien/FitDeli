@@ -1,0 +1,209 @@
+@font-face {
+    font-family: "Mont";
+    src: url("../font/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Pop";
+    src: url("../font/Poppins-Medium.ttf");
+}
+
+
+
+:root {
+    --header-height: 12vh;
+    --container-height: 280vh;
+    --container-mobile-height: 270vh;
+    --partner-height: 270vh;
+    --partner-mobile-height: 160vh;
+    --partner-client-height: 200vh;
+    --partner-partners-height: 20vh;
+    --resource-height: 20vh;
+    --resource-content-height: 10vh;
+    --footer-height: 10vh;
+    --5vw: 5vw;
+    --5vh: 5vh;
+    --8vw: 8vw;
+    --10vw: 10vw;
+    --blue-txt: rgba(172, 229, 255, 1);
+    --white-txt: rgba(255, 255, 255, 1);
+    --black-txt: rgba(37, 43, 66, 1);
+    --gray-txt: rgba(115, 115, 115, 1);
+    --blue-bg: rgba(15, 144, 202, 1);
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Mont';
+    height: 100vh;
+    transition: 0.5s;
+}
+
+/* txt */
+.txt-18 {
+    font-family: 'Mont';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.txt-12 {
+    font-family: 'Mont';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--gray-txt);
+
+}
+
+.txt-14 {
+    font-family: 'Mont';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--black-txt);
+}
+
+.txt-15 {
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--white-txt);
+}
+
+.txt-19 {
+
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 22px;
+    color: rgba(0, 16, 73, 1);
+}
+
+.txt-11 {
+
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 17px;
+    color: rgba(63, 66, 84, 1);
+}
+
+
+.txt-33 {
+
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 39px;
+    color: white;
+}
+
+.txt-20 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: rgba(0, 16, 73, 1);
+}
+
+.txt-16 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: rgba(161, 165, 183, 1);
+}
+
+.txt-13 {
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 400;
+}
+
+
+.txt-34 {
+    font-family: 'Mont';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 43px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.txt-24 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+.font-weight700 {
+    font-weight: 700;
+}
+
+.txt-14-parner {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+/* color */
+.gray {
+    color: rgba(126, 130, 153, 1);
+}
+
+.blue {
+    color: rgba(1, 76, 152, 1);
+}
+
+.blue-company {
+    color: rgba(0, 158, 247, 1);
+}
+
+.white {
+    color: rgba(200, 224, 235, 1);
+}
+
+.partner-title-color {
+    color: rgb(3, 85, 10);
+}
+
+
+/* margin */
+.margin_bottom_4vh {
+    margin-bottom: 4vh;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #01350e;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    line-height: 15px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+.button img {
+    margin-left: 1vw;
+}
+
+.button:hover {
+    opacity: 0.7;
+}

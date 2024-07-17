@@ -1,0 +1,491 @@
+header {
+    height: var(--header-height);
+    width: 100%;
+    display: flex;
+    background: white;
+    padding-top: 1vh;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+
+}
+
+header .logo {
+    margin-left: var(--8vw);
+    height: 10vh;
+    width: 10vw;
+}
+
+header .logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    color: #387647;
+}
+
+.menu {
+    width: 75vw;
+    display: flex;
+    justify-content: space-around;
+    margin-left: var(--5vw);
+    align-items: center;
+}
+
+.menu div a:hover {
+    color: #387647;
+}
+
+.menu div:first-child {
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+#contact-btn {
+    border: 1px solid #01350e;
+    padding: 15px 25px;
+    border-radius: 40px;
+    outline: none;
+    background: white;
+    cursor: pointer;
+    font-family: 'Mont';
+    color: #387647;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    margin-left: 5vh;
+}
+
+#contact-btn:hover {
+    opacity: 0.7;
+
+}
+
+.menu div:last-child form {
+    position: absolute;
+    background: rgba(1, 76, 152, 1);
+    color: white;
+    width: 25vw;
+    height: 60vh;
+    border-radius: 8px;
+    padding: 24px 28px;
+    overflow: hidden;
+    margin-top: 3vh;
+    right: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.25s;
+}
+
+.menu div:last-child form h3,
+.menu div:last-child form h4,
+.menu div:last-child form input[type="text"],
+.menu div:last-child form button {
+    margin-bottom: 2vh;
+}
+
+.menu div:last-child form input[type="text"] {
+    padding: 1vh;
+    width: 20vw;
+    outline: none;
+    border: 1px solid white;
+    background: rgba(1, 76, 152, 1);
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.menu div:last-child form input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 1);
+}
+
+
+
+.frm-btn {
+    font-size: 15px;
+    font-family: 'Mont';
+    font-weight: 700px;
+    color: white;
+    padding: 2vh 2vw;
+    border-radius: 25px;
+    background: rgba(35, 166, 240, 1);
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu div form h4 {
+    background: white;
+    width: 20vw;
+    color: rgba(1, 76, 152, 1);
+    text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.accepted {
+    color: rgba(35, 166, 240, 1);
+    background: white;
+    padding: 2vh 0.8vw;
+
+}
+
+.menu-btn {
+    display: none;
+}
+
+
+
+
+/* ---------------------------------------------------------- */
+.container {
+    background: #387647 no-repeat;
+
+    height: var(--container-height);
+}
+
+/* ---------------------------------------------------------- */
+.banner {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 12vh;
+
+}
+
+
+.banner div:first-child {
+    width: 50vw;
+    height: 30vh;
+    margin-left: 8vw;
+    margin-top: 15vh;
+}
+
+.banner div:first-child button {
+    margin-top: 8vh;
+}
+
+.span {
+    color: rgba(172, 229, 255, 1);
+}
+
+.banner div:last-child {
+    height: 80vh;
+    width: 40vw;
+    overflow: hidden;
+}
+
+.banner div:last-child img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ---------------------------------------------------------- */
+.service-title {
+    text-align: center;
+    margin: 0 20vw;
+}
+
+.service-title div:first-child {
+    margin-bottom: 4vh;
+
+}
+
+.service-title button {
+    margin: 4vh auto;
+    font-weight: 400;
+}
+
+.service-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8vw;
+    margin-top: 4vh;
+
+
+}
+
+.service-content .item {
+    width: 20vw;
+    height: 50vh;
+    background: var(--white-txt);
+    border-radius: 8px;
+    padding: 32px 24px;
+    position: relative;
+
+}
+
+.service-content .item-new {
+    margin: 0;
+    padding: 0;
+}
+
+.item-new img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-content .item:hover {
+
+    background: #042400;
+
+}
+
+.service-content .item:hover .title,
+.service-content .item:hover .description {
+    color: var(--white-txt);
+}
+
+.service-content .item div:first-child img {
+    width: 50px;
+    height: 50px;
+}
+
+.service-content .item .title {
+    width: 16vw;
+}
+
+.service-content .item .title::after {
+    content: "";
+    height: 0.3vh;
+    width: 4vw;
+    background: rgba(216, 80, 18, 1);
+    display: block;
+    margin: 2vh 0;
+}
+
+.service-content .item:hover .title::after {
+    background: var(--white-txt);
+}
+
+.service-content .item .description {
+    height: 16vh;
+    width: 16vw;
+    overflow: hidden;
+
+}
+
+.service-content .item .arrow {
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+.service-content .item:hover .arrow {
+    opacity: 1;
+    position: absolute;
+    left: 8vw;
+    bottom: 1vh;
+    pointer-events: all;
+    cursor: pointer;
+
+}
+
+.service-content .item:hover .arrow:hover {
+    opacity: 0.7;
+}
+
+
+.service-quality {
+    margin: 8vh 12vw;
+    width: 80vw;
+}
+
+.service-quality .service-title .description {
+    text-align: center;
+}
+
+.item .quality {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.service-quality .service-content .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.5s;
+    width: 20vw;
+    border-radius: 8px;
+
+}
+
+.service-quality .service-content .item .quality:not(:last-child)::after {
+    content: "";
+    height: 0.3vh;
+    width: 16vw;
+    background: rgba(0, 0, 0, 0.32);
+    display: block;
+    margin: 2vh 0;
+    position: absolute;
+    top: 4vh;
+
+}
+
+.service-quality .service-content .item:hover {
+    transform: scale(1.1);
+    color: white;
+
+}
+
+.service-quality .service-content .item:hover .item-title,
+.service-quality .service-content .item:hover .quality {
+    color: white;
+}
+
+.service-quality .service-content .item:hover .quality:not(:last-child)::after {
+    background: rgba(255, 255, 255, 0.64);
+}
+
+/* ---------------------------------------------------------- */
+.partner {
+    height: var(--partner-height);
+
+}
+
+.client {
+    height: var(--partner-client-height);
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+.client .title {
+    margin-top: 12vh;
+    margin-bottom: 4vh;
+    font-size: 45px;
+}
+
+
+.comment {
+    display: flex;
+    width: 80vw;
+    justify-content: space-between;
+}
+
+.comment-content {
+    width: 26vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.comment-content .user {
+
+    display: flex;
+
+}
+
+.comment-content .user .user-img {
+    margin-right: 2vw;
+}
+
+.partners {
+    width: 70vw;
+    height: var(--partner-partners-height);
+    margin: 0vh auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25vh;
+
+}
+
+.partners .title {
+    font-size: 45px;
+    margin-bottom: 5vh;
+}
+
+.partners .description {
+    text-align: center;
+}
+
+.partners .logo {
+    width: 50vw;
+    height: 20vh;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.partners .logo div {
+    width: 100px;
+    height: 100px;
+
+}
+
+.partners .logo div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 120%;
+}
+
+/* ---------------------------------------------------------- */
+
+.resource {
+    background: #387647 no-repeat;
+
+    height: var(--resource-height);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20vw;
+    padding-right: 20vw;
+
+}
+
+
+.resource .touch,
+.resource .strend,
+.resource .resources {
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 12vh;
+    justify-content: space-around;
+    height: var(--resource-content-height);
+}
+
+.resource .touch .icon {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    height: var(--footer-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: #387647;
+    position: relative;
+}
+
+footer .right {
+    position: absolute;
+    right: 0;
+
+}
+
+footer .logo {
+    height: 10vh;
+    width: 10vw;
+}
+
+footer .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
