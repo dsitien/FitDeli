@@ -154,13 +154,13 @@ header .logo img {
 
 }
 
-
+/* 
 .banner div:first-child {
-    width: 50vw;
+    width: 100vw;
     height: 30vh;
-    margin-left: 8vw;
+    margin-left: 8vw; 
     margin-top: 15vh;
-}
+} */
 
 .banner div:first-child button {
     margin-top: 8vh;
@@ -172,9 +172,9 @@ header .logo img {
 
 .banner div:last-child {
     height: 50vh;
-    width: 30vw;
+    width: 100vw;
     overflow: hidden;
-    margin-top: 5vh;
+
     margin-bottom: 5vh;
     border-radius: 8px;
 }
@@ -361,6 +361,16 @@ header .logo img {
     margin: 0 auto;
 }
 
+.client-img {
+    height: 220vh;
+    width: 70vw;
+}
+
+.client-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 
 .client .title {
     margin-top: 12vh;
@@ -401,13 +411,13 @@ header .logo img {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin-top: 25vh;
+    margin-top: 20vh;
 
 }
 
 .partners .title {
     font-size: 45px;
-    margin-bottom: 5vh;
+    margin-bottom: 10vh;
 }
 
 .partners .description {

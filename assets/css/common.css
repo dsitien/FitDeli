@@ -12,12 +12,12 @@
 
 :root {
     --header-height: 12vh;
-    --container-height: 280vh;
+    --container-height: 250vh;
     --container-mobile-height: 270vh;
-    --partner-height: 270vh;
+    --partner-height: 280vh;
     --partner-mobile-height: 160vh;
-    --partner-client-height: 200vh;
-    --partner-partners-height: 20vh;
+    --partner-client-height: 220vh;
+    --partner-partners-height: 40vh;
     --resource-height: 20vh;
     --resource-content-height: 10vh;
     --footer-height: 10vh;
@@ -107,7 +107,7 @@ body {
     font-size: 60px;
     font-weight: 700;
     line-height: 39px;
-    color: white;
+    color: rgb(230, 209, 20);
 }
 
 .txt-20 {
